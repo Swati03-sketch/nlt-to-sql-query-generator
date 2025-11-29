@@ -43,15 +43,3 @@ def generate_sql(question, schema):
         return {"sql" : sql_clean, "error" : None}
     except Exception as e:
         return {"sql" : None, "error" : str(e)}
-
-'''if __name__ == "__main__":
-    question = "Add a column 'email' of type TEXT to the Users table"
-    schema = "Users(Id, NAME, AGE)"
-    
-    result = generate_sql(question, schema)
-    
-    if result["error"]:
-        print("Error generating SQL:", result["error"])
-    else:
-        print("Generated SQL:", result["sql"]) 
-'''
