@@ -1,0 +1,24 @@
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Node modules (if using JS)
+node_modules/
+
+app/app_new.py
+app/app1.py
+
+create_db1.py
+sample.db
+text_to_sql.py
+
+# IDE files
+.vscode/
+.DS_Store

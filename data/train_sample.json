@@ -1,0 +1,62 @@
+[
+    {
+        "questions" : "List all the students who has age less than 18",
+        "schema" : "students(id, name, age)",
+        "sql" : "SELECT * FROM students WHERE age < 18;"
+    },
+    {
+        "questions" : "Find the names of employees who work in the 'Sales' department",
+        "schema" : "employees(id, name, department)",
+        "sql" : "SELECT name FROM employees WHERE department = 'Sales';"
+    },
+    {
+    "question": "List all employees who earn more than 50000.",
+    "schema": "employees(emp_id, emp_name, salary, department)",
+    "sql": "SELECT * FROM employees WHERE salary > 50000;"
+  },
+  {
+    "question": "Show the product names that cost less than 100.",
+    "schema": "products(product_id, product_name, price, stock)",
+    "sql": "SELECT product_name FROM products WHERE price < 100;"
+  },
+  {
+    "question": "How many orders were placed in total?",
+    "schema": "orders(order_id, customer_id, amount, order_date)",
+    "sql": "SELECT COUNT(*) FROM orders;"
+  },
+  {
+    "question": "List all books published after 2015.",
+    "schema": "books(book_id, title, author, year)",
+    "sql": "SELECT * FROM books WHERE year > 2015;"
+  },
+  {
+    "question": "Show all customers whose city is Mumbai.",
+    "schema": "customers(customer_id, name, city, age)",
+    "sql": "SELECT * FROM customers WHERE city = 'Mumbai';"
+  },
+  {
+    "question": "Find total stock of all products.",
+    "schema": "products(product_id, product_name, price, stock)",
+    "sql": "SELECT SUM(stock) FROM products;"
+  },
+  {
+    "question": "Retrieve all sales records for the year 2023.",
+    "schema": "sales(sale_id, product_id, quantity, sale_date)",
+    "sql": "SELECT * FROM sales WHERE YEAR(sale_date) = 2023;"
+  },
+  {
+    "question": "List employees working in the HR department.",
+    "schema": "employees(emp_id, emp_name, salary, department)",
+    "sql": "SELECT * FROM employees WHERE department = 'HR';"
+  },
+  {
+    "question": "Show the details of the order with order_id 10.",
+    "schema": "orders(order_id, customer_id, amount, order_date)",
+    "sql": "SELECT * FROM orders WHERE order_id = 10;"
+  },
+  {
+    "question": "List all doctors from the cardiology department.",
+    "schema": "doctors(doc_id, name, specialty, experience)",
+    "sql": "SELECT * FROM doctors WHERE specialty = 'Cardiology';"
+  }
+]
